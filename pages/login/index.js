@@ -16,8 +16,9 @@ const loginUser = async (userData) => {
         });
 
         if (response.ok) {
-            localStorage.setItem('username', data.username);
-
+            const data = await response.json(); 
+            
+            localStorage.setItem('username', data.data.username);
         } else {
             const data = await response.json();
             console.error('Error during login:', data.message);
