@@ -1,5 +1,5 @@
 import connectDB from '../../database/db';
-import User from '../../database/model/user';
+import User from '../../database/model/User';
 
 connectDB();
 
