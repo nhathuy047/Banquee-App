@@ -1,4 +1,4 @@
-import User from "../../database/model/user";
+import User from "../../database/model/User";
 import connectDB from '../../database/db';
 connectDB();
 
