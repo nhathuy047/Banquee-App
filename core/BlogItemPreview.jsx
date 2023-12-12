@@ -8,7 +8,7 @@ export const BlogItemPreview = ({ title, img, categories, id }) => {
           <img
             src={img}
             alt={"blogimg"}
-            className="rounded-2xl"
+            className="rounded-2xl h-80"
             layout="fill"
             objectFit="cover"
           />
