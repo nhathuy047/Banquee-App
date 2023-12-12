@@ -11,6 +11,7 @@ export const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   useEffect(() => {
     const storedUsername = localStorage.getItem("username");
+    console.log(storedUsername);
     if (storedUsername) {
       setIsLoggedIn(true);
     }
