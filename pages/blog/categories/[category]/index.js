@@ -1,5 +1,3 @@
-import { useRouter } from "next/router";
-import { Link } from "react-scroll";
 import { AnimationContainer } from "../../../../core/AnimationContainer";
 import { BlogItemPreview } from "../../../../core/BlogItemPreview";
 import { CategoriesList } from "../../../../components/CategoriesList";
@@ -12,7 +10,7 @@ const CategoryBlog = ({ filteredPosts }) => {
       <AnimationContainer className="grid grid-cols-1 gap-8 sm:grid-cols-2  lg:grid-cols-3">
         {filteredPosts.map((el, i) => (
           <BlogItemPreview
-            img={el.img}
+            img={el.img.src}
             title={el.title}
             txt={el.summary}
             categories={el.categories}
