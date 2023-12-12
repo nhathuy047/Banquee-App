@@ -13,7 +13,7 @@ export const BlogItemPreview = ({ title, img, categories, id }) => {
             objectFit="cover"
           />
         </div>
-        <div className="flex flex-col items-start gap-2">
+        <div className="flex flex-col items-start gap-2 mt-5">
           <h5 className="font-heading text-3xl tracking-tighter">{title}</h5>
         </div>
         <div className="flex gap-2">
